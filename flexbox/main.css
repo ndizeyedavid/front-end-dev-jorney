@@ -1,0 +1,20 @@
+.container{
+	height: 400px;
+	border: 1px solid;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.container .box{
+	margin-top: 10px;
+	padding: 20px;
+}
+.item-1{
+	background-color: blue;
+}
+.item-2{
+	background-color: grey;
+}
+.item-3{
+	background-color: green;
+}

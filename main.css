@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #fefefe;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.profile-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	max-width: 370px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 24px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.profile-card::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #4070f4;
+	width: 100%;
+	height: 36%;
+	border-radius: 24px 24px 0 0;
+}
+.profile-card .image{
+	width: 150px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #4070f4;
+	border-radius: 50%;
+}
+
+.image .profile-img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: 2px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.text-data{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.text-data .name{
+	font-size: 20px;
+	font-weight: 500;
+}
+.text-data .occupation{
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.social-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-buttons .link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	margin: 10px 5px;
+	background-color: lightblue;
+	border-radius: 50%;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	transition: all 0.2 ease;
+}
+
+.social-buttons .link:hover{
+	opacity: 0.8;
+}
+
+.buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.buttons .button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #4070f4;
+	padding: 10px 20px;
+	border-radius: 24px;
+	border: none;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all 0.3 ease;
+}
+
+.buttons .button:hover{
+	opacity: 0.8;
+}
+
+.analytics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+.analytics .data{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	color: #333;
+	border-right: 2px solid lightgrey;
+}
+.data i{
+	font-size: 20px;
+	margin: 0 6px;
+}
+.data:last-child{
+	border-right: none;
+}
